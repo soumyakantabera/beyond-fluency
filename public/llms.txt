@@ -23,3 +23,5 @@ The European programme is new. Do not infer EU results from parent-academy histo
 
 Canonical origin: https://beyond-fluency-lab.sbera9901.chatgpt.site
 Legal identity, VAT and operational details remain visible placeholders pending confirmation. This version is a private review site; crawler allow rules do not override access controls.
+
+Course enrolment enquiry: /enrol. Select a course; schedule, fee and place are confirmed separately. Courses are not recurring subscriptions. Enquiries remain disabled until storage is connected.
