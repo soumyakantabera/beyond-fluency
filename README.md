@@ -17,7 +17,7 @@ The diagnostic and course recommendations work without a database or email accou
 3. Verify a sending domain in Resend. Add `RESEND_API_KEY` and `EMAIL_FROM` to send requested personalised reports. Redeploy.
 4. Test a real request, database entry and report delivery before opening booking.
 
-`lib/server-db.vercel.ts` implements parameterised SQL over HTTPS using Turso's documented v2 pipeline. `next.config.ts` selects this adapter for Vercel. The separate Sites build uses its existing Cloudflare D1 adapter. No database is stored on a serverless filesystem. Mail is only marked sent after Resend accepts it. Never commit environment secrets or learner data.
+`lib/server-db.vercel.ts` implements parameterised SQL over HTTPS using Turso's documented v2 pipeline. `scripts/prepare-vercel.mjs` selects this adapter before the Vercel build. The separate Sites build uses its existing Cloudflare D1 adapter. No database is stored on a serverless filesystem. Mail is only marked sent after Resend accepts it. Never commit environment secrets or learner data.
 
 ## Before paid enrolment
 
