@@ -8,7 +8,7 @@ p=Path('public/assets');fontdir=Path('public/fonts')
 ink='#272422';wine='#174F46';paper='#F4F1EA';line='#D8D0C8'
 source=Path('lib/icon-paths.ts').read_text()
 paths=re.findall(r"'([^']+)'",source.split('export const monogramPaths = [')[1].split('];')[0])
-mark=''.join(f'<path d="{d}" stroke="currentColor" stroke-width="{2.2 if i==0 else 1.3}" fill="none" stroke-linejoin="round"/>' for i,d in enumerate(paths))
+mark=''.join(f'<path d="{d}" stroke="currentColor" stroke-width="{3 if i==0 else 1.5}" fill="none" stroke-linejoin="round"/>' for i,d in enumerate(paths))
 fonts={n:TTFont(fontdir/(n+'.ttf')) for n in ['bodoni-regular','bodoni-italic','manrope-regular','manrope-medium','manrope-semibold']}
 def text(value,x,y,size,font='manrope-regular',fill=ink,spacing=0):
  f=fonts[font];scale=size/f['head'].unitsPerEm;cmap=f.getBestCmap();glyphs=f.getGlyphSet();pieces=[];cursor=x
@@ -20,7 +20,7 @@ def text(value,x,y,size,font='manrope-regular',fill=ink,spacing=0):
 def svg(body,w,h,unit=''):
  return f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}{unit}" height="{h}{unit}" viewBox="0 0 {w} {h}">{body}</svg>'
 def wordmark(x,y,scale=1,color=wine):
- return f'<g transform="translate({x} {y}) scale({scale})" color="{color}">{mark}</g>'+text('beyond',x+65*scale,y+34*scale,43*scale,'bodoni-regular',color)+text('FLUENCY LAB',x+68*scale,y+49*scale,5.5*scale,'manrope-medium',color,1.7*scale)
+ return f'<g transform="translate({x} {y}) scale({scale})" color="{color}">{mark}</g>'+text('Beyond',x+65*scale,y+34*scale,43*scale,'bodoni-regular',color)+text('FLUENCY LAB',x+68*scale,y+56*scale,8*scale,'manrope-medium',color,1.7*scale)
 logo=svg(wordmark(18,20,2.1),520,145)
 (p/'logo.svg').write_text(logo)
 (p/'logo-reversed.svg').write_text(svg(f'<rect width="520" height="145" fill="{wine}"/>'+wordmark(18,20,2.1,paper),520,145))
@@ -47,7 +47,7 @@ for i,(name,d) in enumerate(icons.items()):
  icon=svg(f'<path d="{d}" fill="none" stroke="{wine}" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>',24,24)
  (p/'icons').mkdir(exist_ok=True);(p/'icons'/(name+'.svg')).write_text(icon)
 (p/'iconography.svg').write_text(svg(''.join(parts),1000,160+((len(icons)+5)//6)*140))
-(p/'brand-guide.txt').write_text('Beyond Fluency Lab · Identity III\n\nTypography: Bodoni Moda regular and italic for headlines; Manrope for reading and UI. Self-hosted fonts with SIL Open Font Licences included.\nPalette: warm stone #F4F1EA; deep ink #272422; emerald #174F46; data blue-grey #7C8B91.\nLogo: original outlined Beyond monogram and custom typeset wordmark. Logo letters are vector paths for consistent rendering.\nIconography: 27 original 24px line icons, 1.4-unit rounded strokes, drawn and exported from one shared source.\nBusiness card: 85×55mm front/back concepts, no bleed. Letterhead: A4 SVG and editable printable HTML. Replace all placeholders before use.\nImagery: fictional AI-generated people and places, never presented as learners, trainers, premises or historical documentary photographs.\nMotion: entry reveals, photographic scale transition, drawn monogram and manual story chapter carousel. OS reduced-motion respected; page-level pause control included.\nSocial preview cards retain the original requested 1200×630 dimensions.\n')
+(p/'brand-guide.txt').write_text('Beyond Fluency Lab · Identity IV\n\nTypography: Bodoni Moda regular and italic for headlines; Manrope for reading and UI. Self-hosted fonts with SIL Open Font Licences included.\nPalette: warm stone #F4F1EA; deep ink #272422; emerald #174F46; data blue-grey #7C8B91.\nLogo: restored and refined stepped plateau mark and custom typeset wordmark. Logo letters are vector paths for consistent rendering.\nIconography: 27 original 24px line icons, 1.4-unit rounded strokes, drawn and exported from one shared source.\nBusiness card: 85×55mm front/back concepts, no bleed. Letterhead: A4 SVG and editable printable HTML. Replace all placeholders before use.\nImagery: fictional AI-generated people and places, never presented as learners, trainers, premises or historical documentary photographs.\nMotion: entry reveals, photographic scale transition, drawn monogram and manual story chapter carousel. OS reduced-motion respected; page-level pause control included.\nSocial preview cards retain the original requested 1200×630 dimensions.\n')
 # Raster reference solely for the image-generation social-card task.
 
 with ZipFile(p/'beyond-fluency-brand-kit.zip','w',ZIP_DEFLATED) as z:

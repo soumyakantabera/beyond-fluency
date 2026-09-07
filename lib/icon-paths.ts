@@ -29,4 +29,4 @@ export const iconPaths = {
  focus:'M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M8 12h8m-4-4v8'
 } as const;
 export type IconName=keyof typeof iconPaths;
-export const monogramPaths = ['M11 6v36h12c10 0 15-5 15-11 0-5-4-9-11-10 5-1 8-4 8-8 0-5-4-7-12-7H11','M17 6v36','M17 22h10','M29 3h15v15','M32 15 44 3'];
+export const monogramPaths = ['M5 41H19V29H31V9H43','M5 29H19V17H31V4'];

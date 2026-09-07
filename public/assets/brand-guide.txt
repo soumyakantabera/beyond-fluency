@@ -1,8 +1,8 @@
-Beyond Fluency Lab · Identity III
+Beyond Fluency Lab · Identity IV
 
 Typography: Bodoni Moda regular and italic for headlines; Manrope for reading and UI. Self-hosted fonts with SIL Open Font Licences included.
 Palette: warm stone #F4F1EA; deep ink #272422; emerald #174F46; data blue-grey #7C8B91.
-Logo: original outlined Beyond monogram and custom typeset wordmark. Logo letters are vector paths for consistent rendering.
+Logo: restored and refined stepped plateau mark and custom typeset wordmark. Logo letters are vector paths for consistent rendering.
 Iconography: 27 original 24px line icons, 1.4-unit rounded strokes, drawn and exported from one shared source.
 Business card: 85×55mm front/back concepts, no bleed. Letterhead: A4 SVG and editable printable HTML. Replace all placeholders before use.
 Imagery: fictional AI-generated people and places, never presented as learners, trainers, premises or historical documentary photographs.
