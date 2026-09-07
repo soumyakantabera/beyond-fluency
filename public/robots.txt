@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_pages/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /_pages/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /_pages/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /_pages/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /_pages/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /_pages/
+
+Sitemap: https://beyond-fluency-lab.sbera9901.chatgpt.site/sitemap.xml
