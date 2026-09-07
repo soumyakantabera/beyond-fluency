@@ -45,3 +45,7 @@ The operating design baseline is the international emerald edition before those 
 ## Validation limits
 
 Code checks can verify the type build, declared font sizes, restored grid declarations and static page metadata. They do not establish user preference, cross-device visual quality or full WCAG conformance. No user testing, conversion experiment or browser visual audit is represented as completed here.
+
+
+## 7 September 2026 — identity and compact mobile refinement
+Original paired-rail ladder mark with three rungs; two-line Beyond Fluency / Lab wordmark. Newsreader headlines and Inter body/navigation are self-hosted, with licences bundled. Square desktop card proportions remain. At widths up to 580px, courses and general guide collections use manual vertical transitions, previous/next controls and Show all; four audience-specific guides remain equally visible. No autoplay; reduced-motion and the site motion preference disable transitions. Body copy is 16–17px, form fields 16px, navigation 16–17px. Origin is described on About only; testimonial provenance remains explicit. Official Stripe, Visa and Mastercard artwork identifies planned options, not an active checkout.

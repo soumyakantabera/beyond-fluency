@@ -1,5 +1,5 @@
 export const ORIGIN = process.env.NEXT_PUBLIC_SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? 'https://'+process.env.VERCEL_PROJECT_PRODUCTION_URL : '') || 'https://beyond-fluency-lab.sbera9901.chatgpt.site';
-export const BUSINESS = 'Beyond Fluency Lab is an independent English-communication coaching brand for fluent speakers in Europe. Based in Kolkata, India, it is from Learn With Smile and offers live online coaching in groups of approximately 6, with course fees from €50 to €150.';
+export const BUSINESS = 'Beyond Fluency Lab is an independent English-communication coaching brand for fluent speakers in Europe. From Learn With Smile, it offers live online coaching in groups of approximately 6, with course fees from €50 to €150.';
 export const AFFILIATION_Q = 'Are you affiliated with my university?';
 export const AFFILIATION_A = "No. Beyond Fluency Lab is an independent programme — we are not partnered with, endorsed by, or officially connected to any specific university. If we ever do form a real partnership with a school, we'll state it clearly on this page, by name.";
 export function pageMeta(path:string,title:string,description:string,kind='home'){const image=ORIGIN+'/assets/og-'+kind+'.png'; return {title,description,alternates:{canonical:ORIGIN+path},openGraph:{title:title+' | Beyond Fluency Lab',description,url:ORIGIN+path,type:'website',images:[{url:image,width:1200,height:630}]},twitter:{card:'summary_large_image',title,description,images:[image]}};}
@@ -22,6 +22,6 @@ export const faqs = [
  ['Do I need to take the courses in order?','No. The tiers describe increasing scope, not compulsory prerequisites. Choose a focused course for an immediate situation or Professional Communication for all three dimensions. Your trainer can discuss fit during the trial.'],
  ['What happens after the course?','Alumni are invited to a monthly live practice session so the work continues beyond the course. Session dates and access details are shared with the cohort.'],
  ['Will this guarantee a promotion, job or sale?','No. Coaching gives you deliberate practice and feedback. Results depend on your context, attendance and practice; we do not guarantee employment, promotions, revenue or a particular outcome.'],
- ['Are there testimonials from Europe?','Not yet. Beyond Fluency Lab has just launched its founding European cohort. The India-based stories on our testimonials page belong to Learn With Smile’s existing programmes.'],
+ ['Are there testimonials from Europe?','Not yet. Beyond Fluency Lab has just launched its founding European cohort. The Parent-academy stories on our testimonials page belong to Learn With Smile’s existing programmes.'],
  [AFFILIATION_Q,AFFILIATION_A]
 ];

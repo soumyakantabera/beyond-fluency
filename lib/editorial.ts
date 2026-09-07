@@ -2,7 +2,7 @@ export type EditorialPhoto = {src:string;alt:string;caption:string};
 const photo=(name:string,alt:string,caption:string):EditorialPhoto=>({src:'/assets/'+name+'.webp',alt,caption});
 export const photos={
  salon:photo('salon','Fictional professionals exchanging ideas in a light-filled study','The conversation is the classroom.'),
- mentoring:photo('mentoring','An illustrative Indian mentor in conversation with an adult learner','Attention that stays with you.'),
+ mentoring:photo('mentoring','An illustrative mentor in conversation with an adult learner','Attention that stays with you.'),
  interview:photo('interview','An illustrative graduate answering a question in a professional interview','Experience, made articulate.'),
  presentation:photo('presentation','A fictional professional leading a focused small-room presentation','A point worth listening to.'),
  practice:photo('practice','Six fictional adults practising communication together','Small groups. Serious practice.'),
@@ -13,7 +13,7 @@ export const photos={
  sme:photo('sme','Illustrative small-business owner discussing an offer','Give your expertise a clear voice.'),
  sales:photo('sales','Illustrative sales professional listening to a client','Move the conversation forward.'),
  student:photo('student','Illustrative adult graduate preparing with a notebook','Ready for the question after the exam.'),
- class:photo('class','Illustrative Indian trainer leading an online class','Live teaching. A consistent trainer.'),
+ class:photo('class','Illustrative trainer leading an online class','Live teaching. A consistent trainer.'),
  hero:photo('hero','Fictional professionals in a small, thoughtful discussion','More than words exchanged.')
 };
 export function editorialPair(label:string,title:string):[EditorialPhoto,EditorialPhoto]{
